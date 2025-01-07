@@ -61,7 +61,8 @@ function WhatsBuy() {
         }
       } else {
         alert("Morate odabrati hranu za pse, mačke ili oboje.");
-        setTimeout(WhatsBuy,2000)
+        // Izbjegavanje direktne rekurzije
+        setTimeout(WhatsBuy,0)
       }
     }
   }
